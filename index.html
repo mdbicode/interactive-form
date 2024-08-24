@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="product">
+                <input type="checkbox">
+                <div class="item">
+                    <img src="warrior.jpg" alt="warrior">
+                    <div class="desc">
+                        <h3>Warrior</h3>
+                        <p>250000</p>
+                        <input type="text" inputmode="numeric">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <input type="checkbox">
+                <div class="item">
+                    <img src="jordan.jpg" alt="jordan">
+                    <div class="desc">
+                        <h3>Nike Jordan</h3>
+                        <p>100000</p>
+                        <input type="text" inputmode="numeric">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product">
+                <input type="checkbox">
+                <div class="item">
+                    <img src="reebok.jpg" alt="reebok">
+                    <div class="desc">
+                        <h3>Reebok</h3>                
+                        <p>372000</p>
+                        <input type="text" inputmode="numeric">
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <p>Total Harga</p>
+                <p id="totalHarga">Rp 0</p>
+            </div>
+            <div class="total">
+                <p>Ongkir</p>
+                <p id="ongkir">Rp 0</p>
+            </div>
+            <hr>
+            <div class="total">
+                <p>Bayar</p>
+                <p id="bayar">Rp 0</p>
+            </div>
+        </div>
+        <div class="right">
+            <form action="">
+                <div class="input-form">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text">
+                </div>
+                <div class="input-form">
+                    <label for="alamat">Alamat</label>
+                    <textarea></textarea>
+                </div>
+                <div class="input-form">
+                    <label for="email">Email</label>
+                    <input type="email">
+                </div>
+                <div class="input-form">
+                    <label for="notelp">No Telepon</label>
+                    <input type="text">
+                </div>
+                <div class="input-form">
+                    <label for="kode">Masukkan Kode Promo</label>
+                    <input id="promoCode" type="text" placeholder="GRATISONGKIR">
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
